@@ -1,0 +1,30 @@
+1. requirements.txt を使う
+Pythonプロジェクトでよく使われる方法で、インストールしたパッケージを requirements.txt ファイルに記録しておき、後で再インストールできるようにします。
+
+方法:
+
+現在インストールされているパッケージとそのバージョンを requirements.txt に保存する:
+pip freeze > requirements.txt
+他の環境でインストールする際に、requirements.txt を使ってインストールします:
+pip install -r requirements.txt
+2. pip list でインストール情報を確認
+インストールされたパッケージを確認する場合は、pip list コマンドでリストとして表示できます。この情報をファイルに保存することもできます。
+
+方法:
+
+pip list > installed_packages.txt
+これで、installed_packages.txt にインストールされたパッケージ一覧が記録されます。
+
+3. conda list (Anaconda/Minicondaの場合)
+もしAnacondaやMinicondaを使用している場合は、conda list コマンドを使ってインストールされたパッケージをリストできます。
+
+方法:
+
+conda list > conda_installed_packages.txt
+これで、conda_installed_packages.txt にパッケージ情報が保存されます。
+
+4. 環境のバックアップ
+仮想環境を使用している場合、その環境を完全にバックアップしておけば、後で復元が可能です。
+
+venv のバックアップ方法:
+仮想環境をそのままコピーしておけば、次回使用する際に同じ環境を再現できます。
