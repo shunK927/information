@@ -1,0 +1,4 @@
+Apple Silicon モード（arm64）で実行:
+arch -arm64 /Users/shun/my-extendscript-project/venv/bin/python /Users/shun/my-extendscript-project/python_code/generate_movie/determine_image_path.py
+Rosetta モード（Intelエミュレーション）で実行:
+arch -x86_64 /Users/shun/my-extendscript-project/venv/bin/python /Users/shun/my-extendscript-project/python_code/generate_movie/determine_image_path.py
