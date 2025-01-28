@@ -1,0 +1,9 @@
+1. 現在の仮想環境を終了する
+仮想環境を終了するには、次のコマンドを実行します。
+
+deactivate
+2. 同じ仮想環境に入り直す
+再度仮想環境に入るには、以下のコマンドを実行します。
+
+source /Users/shun/my-extendscript-project/venv/bin/activate
+これで、同じ仮想環境に入り直すことができます。
