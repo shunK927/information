@@ -1,0 +1,20 @@
+提供されたGoogle Driveのリンクを、Runway APIで使用するための直接画像URLに変換する必要があります。
+
+以下の手順でリンクを変換してください：
+
+1. Google Driveのリンクを変更
+提供されたリンク：
+
+https://drive.google.com/file/d/1DvwV95LMW5biqCFjYGXfNTqiSouMo0ct/view?usp=share_link
+これを次の形式に変更します：
+
+https://drive.google.com/uc?export=view&id=1DvwV95LMW5biqCFjYGXfNTqiSouMo0ct
+2. APIリクエストにこのURLを使用
+変換後のURLを、Runway APIの prompt_image に指定してリクエストを送信します。コード例は以下のようになります：
+
+task = client.image_to_video.create(
+  model='gen3a_turbo',
+  prompt_image='https://drive.google.com/uc?export=view&id=1DvwV95LMW5biqCFjYGXfNTqiSouMo0ct',  # 変換した画像URL
+  prompt_text='A cute cat spinning around joyfully on the floor'
+)
+これで、Google Driveの画像を直接APIリクエストで使用できるようになります
